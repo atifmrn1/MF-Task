@@ -1,0 +1,80 @@
+.mechanicalSectionContainer,
+.plumbingSectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .heading {
+
+        color: #FF7518;
+    }
+
+    .cardBox {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        .card {
+            background-color: #2F2F2F;
+            border-radius: .5rem;
+            overflow: hidden;
+            width: 250px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            justify-content: space-between;
+
+            .title {
+                text-align: center;
+                padding: 0 1rem;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .details {
+
+                // height: 100%;    
+                // transition: all 5s;
+                .imgBox {
+                    transition: all .5s;
+                    border-radius: .5rem;
+                    overflow: hidden;
+                    height: 250px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                p {
+                    transition: all .5s;
+                    opacity: 0;
+                    height: 0px;
+                    margin: 0;
+                }
+
+                &:hover {
+                    .imgBox {
+                        height: 0px;
+                    }
+
+                    p {
+                        padding: .8rem;
+                        height: 250px;
+                        opacity: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+}

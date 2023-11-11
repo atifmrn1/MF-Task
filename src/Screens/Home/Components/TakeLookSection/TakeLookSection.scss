@@ -1,0 +1,47 @@
+.takeLookSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .heading {
+        color: #FF7518;
+        text-align: center;
+    }
+
+    .cardBox {
+        display: flex;
+        gap: 1rem;
+
+        .card {
+            height: 250px;
+            width: 200px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border-radius: .5rem;
+
+            .imgBox {
+                height: 200px;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            button {
+                background-color: #2F2F2F;
+                color: white;
+                height: 50px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                border-radius: .5rem;
+            }
+        }
+    }
+}

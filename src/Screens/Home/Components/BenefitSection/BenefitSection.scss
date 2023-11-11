@@ -1,0 +1,34 @@
+.benefitSectionContainer {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .mechanicalBox,
+        .plumbingBox {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            .heading {
+                color: #FF7518;
+            }
+
+            .points {
+                display: flex;
+                justify-content: space-between;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .7rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
